@@ -1,0 +1,19 @@
+{
+  "name": "TEC Ogba Prayer Box",
+  "short_name": "Prayer Box",
+  "description": "TEC Ogba Prayer Box for submitting private prayer requests.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F8F6EF",
+  "theme_color": "#B9862E",
+  "icons": [
+    {
+      "src": "./Assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
