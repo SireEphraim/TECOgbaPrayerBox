@@ -4,6 +4,6 @@
  * or a legacy service_role key in this file.
  */
 window.PRAYER_BOX_CONFIG = Object.freeze({
-  SUPABASE_URL: 'https://YOUR-PROJECT-REF.supabase.co',
-  SUPABASE_PUBLISHABLE_KEY: 'sb_publishable_REPLACE_WITH_YOUR_KEY'
+  SUPABASE_URL: 'https://qygdtgqycqrrgfkzgqed.supabase.co',
+  SUPABASE_PUBLISHABLE_KEY: 'sb_publishable_lh8hSKSfSGF_Vz0K8d62Iw_7QNkgmdw'
 });
