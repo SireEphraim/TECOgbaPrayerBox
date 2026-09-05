@@ -130,7 +130,7 @@
       $('prayer-list').innerHTML = '';
       setMessage(
         'dashboard-message',
-        'This signed-in account is not approved for the Prayer Ministry, or the database setup is incomplete.',
+        'This account is not approved by the Prayer Ministry.',
         'error'
       );
       return;
