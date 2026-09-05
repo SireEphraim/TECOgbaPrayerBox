@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Submit a private prayer request to the prayer ministry.">
+  <title>Prayer Box</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="shell">
+    <main id="submit-view" class="card">
+      <div class="brand">
+        <svg class="flame" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2S6 9 6 14a6 6 0 0012 0C18 9 12 2 12 2Z" fill="#B9862E"/><path d="M12 8s-3 4-3 7a3 3 0 006 0c0-3-3-7-3-7Z" fill="#F8F6EF"/></svg>
+        <h1>Prayer box</h1>
+      </div>
+      <p class="lede">Share what’s on your heart. Your request goes directly to the prayer ministry; no name or login is required.</p>
+
+      <form id="prayer-form" novalidate>
+        <div class="field">
+          <span class="field-label">What’s this about? <span class="optional">(optional)</span></span>
+          <div id="category-pills" class="pill-row" role="group" aria-label="Prayer category"></div>
+        </div>
+        <div class="field">
+          <label class="field-label" for="prayer-text">Your prayer request</label>
+          <textarea id="prayer-text" maxlength="4000" required rows="5" placeholder="Write as much or as little as you’d like…"></textarea>
+          <p id="text-error" class="message error hidden" role="alert">Write your request before sending.</p>
+        </div>
+        <label class="urgent-toggle">
+          <input type="checkbox" id="urgent-check">
+          <span class="toggle-track" aria-hidden="true"><span class="toggle-thumb"></span></span>
+          This feels urgent
+        </label>
+        <button id="submit-btn" class="btn-primary" type="submit">Send prayer request</button>
+        <p id="submit-message" class="message hidden" role="status"></p>
+      </form>
+    </main>
+
+    <main id="confirmation-view" class="card hidden" aria-live="polite">
+      <div class="brand">
+        <svg class="flame" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2S6 9 6 14a6 6 0 0012 0C18 9 12 2 12 2Z" fill="#B9862E"/><path d="M12 8s-3 4-3 7a3 3 0 006 0c0-3-3-7-3-7Z" fill="#F8F6EF"/></svg>
+        <h2>Your request has been received</h2>
+      </div>
+      <p class="lede">Someone from the prayer ministry will be praying over this. Thank you for trusting us with it.</p>
+      <button id="send-another-btn" class="btn-secondary" type="button">Send another request</button>
+    </main>
+
+    <footer class="footer-link">
+      <a href="ministry.html">Prayer Ministry sign in</a>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.111.0/dist/umd/supabase.js"></script>
+  <script src="app-config.js"></script>
+  <script src="shared.js"></script>
+  <script src="submit.js"></script>
+</body>
+</html>
