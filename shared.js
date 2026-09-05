@@ -19,7 +19,7 @@
     client,
     configured,
     configurationMessage: hasSettings
-      ? 'The database library did not load. Check your internet connection and try again.'
+      ? 'Unable to load. Check your internet connection and try again.'
       : 'This site is not connected yet. Add the Supabase URL and publishable key in app-config.js.'
   });
 })();
