@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Secure Prayer Ministry dashboard.">
+  <title>Prayer Ministry</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="shell">
+    <main id="login-view" class="card">
+      <div class="brand">
+        <svg class="flame" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2S6 9 6 14a6 6 0 0012 0C18 9 12 2 12 2Z" fill="#B9862E"/><path d="M12 8s-3 4-3 7a3 3 0 006 0c0-3-3-7-3-7Z" fill="#F8F6EF"/></svg>
+        <h1>Prayer Ministry</h1>
+      </div>
+      <p class="lede">Sign in with the Ministry account issued to you. Requests are only visible to approved members.</p>
+      <form id="login-form">
+        <div class="field"><label class="field-label" for="email">Email</label><input id="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label class="field-label" for="password">Password</label><input id="password" type="password" autocomplete="current-password" required></div>
+        <button id="login-button" class="btn-primary" type="submit">Sign in</button>
+        <p id="login-message" class="message hidden" role="alert"></p>
+      </form>
+      <p class="footer-link"><a href="index.html">Back to Prayer Box</a></p>
+    </main>
+
+    <main id="dashboard-view" class="card card-wide hidden">
+      <header class="page-header">
+        <h1>Prayer Ministry</h1>
+        <div class="admin-actions">
+          <button id="refresh-button" class="link-btn" type="button">Refresh</button>
+          <button id="logout-button" class="link-btn" type="button">Log out</button>
+        </div>
+      </header>
+      <div class="admin-toolbar">
+        <div id="status-tabs" class="pill-row" role="group" aria-label="Filter requests by status"></div>
+      </div>
+      <p id="dashboard-message" class="message muted">Loading prayer requests…</p>
+      <ul id="prayer-list" class="prayer-list"></ul>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.111.0/dist/umd/supabase.js"></script>
+  <script src="app-config.js"></script>
+  <script src="shared.js"></script>
+  <script src="ministry.js"></script>
+</body>
+</html>
