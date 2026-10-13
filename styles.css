@@ -129,6 +129,10 @@ button, .button-link { font: inherit; }
 .prayer-item-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 8px; }
 .prayer-item-actions .link-btn { margin-left: auto; }
 
+.prayer-room-note { color: var(--ink-soft); font-size: 14px; line-height: 1.5; margin: 14px 0 0; text-align: center; }
+.prayer-room-note a { color: var(--gold-dark); font-weight: 600; }
+.confirmation-prayer-room-note { margin: 0 0 28px; }
+
 button:focus-visible, a:focus-visible, textarea:focus-visible, input:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 
 @media (max-width: 520px) {
